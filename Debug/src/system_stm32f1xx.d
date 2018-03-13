@@ -1,4 +1,4 @@
-src/main.o: ../src/main.cpp \
+src/system_stm32f1xx.o: ../src/system_stm32f1xx.c \
  /home/mdk/workspace/p1/CMSIS/device/stm32f1xx.h \
  /home/mdk/workspace/p1/CMSIS/device/stm32f103xb.h \
  /home/mdk/workspace/p1/CMSIS/core/core_cm3.h \
@@ -49,13 +49,7 @@ src/main.o: ../src/main.cpp \
  /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_pcd.h \
  /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_ll_usb.h \
  /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h \
- /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_hcd.h \
- /home/mdk/workspace/p1/inc/stm32f1xx_it.h \
- /home/mdk/workspace/p1/CMSIS/device/system_stm32f1xx.h \
- /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
- /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
- /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_hcd.h
 
 /home/mdk/workspace/p1/CMSIS/device/stm32f1xx.h:
 
@@ -158,15 +152,3 @@ src/main.o: ../src/main.cpp \
 /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h:
 
 /home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_hcd.h:
-
-/home/mdk/workspace/p1/inc/stm32f1xx_it.h:
-
-/home/mdk/workspace/p1/CMSIS/device/system_stm32f1xx.h:
-
-/home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_gpio.h:
-
-/home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
-
-/home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_tim.h:
-
-/home/mdk/workspace/p1/HAL_Driver/Inc/stm32f1xx_hal_uart.h:

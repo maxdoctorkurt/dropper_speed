@@ -14,14 +14,15 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1738024466" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1738024466" name="Debug" parent="fr.ac6.managedbuild.config.gnu.cross.exe.debug" postannouncebuildStep="Generating binary and Printing size information:" postbuildStep="arm-none-eabi-objcopy -O binary &quot;${BuildArtifactFileBaseName}.elf&quot; &quot;${BuildArtifactFileBaseName}.bin&quot;; arm-none-eabi-size &quot;${BuildArtifactFileName}&quot;" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1738024466." name="/" resourcePath="">
-						<toolChain id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1958461674" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
+						<toolChain errorParsers="" id="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug.1958461674" name="Ac6 STM32 MCU GCC" superClass="fr.ac6.managedbuild.toolchain.gnu.cross.exe.debug">
 							<option id="fr.ac6.managedbuild.option.gnu.cross.mcu.1235703509" name="Mcu" superClass="fr.ac6.managedbuild.option.gnu.cross.mcu" value="STM32F103C8Tx" valueType="string"/>
 							<option id="fr.ac6.managedbuild.option.gnu.cross.board.1785775618" name="Board" superClass="fr.ac6.managedbuild.option.gnu.cross.board" value="stm32f103c8t" valueType="string"/>
+							<option id="fr.ac6.managedbuild.option.gnu.cross.floatabi.789348419" name="Floating-point ABI" superClass="fr.ac6.managedbuild.option.gnu.cross.floatabi" value="fr.ac6.managedbuild.option.gnu.cross.floatabi.soft" valueType="enumerated"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="fr.ac6.managedbuild.targetPlatform.gnu.cross.1264821464" isAbstract="false" osList="all" superClass="fr.ac6.managedbuild.targetPlatform.gnu.cross"/>
-							<builder buildPath="${workspace_loc:/p1}/Debug" id="fr.ac6.managedbuild.builder.gnu.cross.1772293648" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
-							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1590601533" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
+							<builder buildPath="${workspace_loc:/p1}/Debug" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="fr.ac6.managedbuild.builder.gnu.cross.1772293648" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="fr.ac6.managedbuild.builder.gnu.cross"/>
+							<tool command="gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.1590601533" name="MCU GCC Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler">
 								<option id="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level.1701737137" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 								<option id="gnu.c.compiler.option.debugging.level.2001902872" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.899370704" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -42,7 +43,7 @@
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c.163635819" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.c"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s.825924168" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.compiler.input.s"/>
 							</tool>
-							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.744307911" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
+							<tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.744307911" name="MCU G++ Compiler" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler">
 								<option id="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level.794024971" name="Optimization Level" superClass="fr.ac6.managedbuild.gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.494604385" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.124720624" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -60,18 +61,20 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/CMSIS/core&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc&quot;"/>
 								</option>
+								<option id="gnu.cpp.compiler.option.dialect.std.720999456" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.c++11" valueType="enumerated"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp.300789457" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.cpp"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s.678270550" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.compiler.input.s"/>
 							</tool>
 							<tool id="fr.ac6.managedbuild.tool.gnu.cross.c.linker.1206836526" name="MCU GCC Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.c.linker"/>
-							<tool id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1651424450" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+							<tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker.1651424450" name="MCU G++ Linker" superClass="fr.ac6.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="gnu.cpp.link.option.nostdlibs.1445101098" name="No startup or default libs (-nostdlib)" superClass="gnu.cpp.link.option.nostdlibs" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.46324965" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
 							<tool id="fr.ac6.managedbuild.tool.gnu.archiver.1743539459" name="MCU GCC Archiver" superClass="fr.ac6.managedbuild.tool.gnu.archiver"/>
-							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.749079253" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
+							<tool command="as" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GASErrorParser" id="fr.ac6.managedbuild.tool.gnu.cross.assembler.749079253" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler">
 								<option id="gnu.both.asm.option.include.paths.1515310929" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/HAL_Driver/Inc/Legacy&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
@@ -87,8 +90,8 @@
 					<fileInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.debug.1738024466.977890379" name="stm32f1xx_it.h" rcbsApplicability="disable" resourcePath="inc/stm32f1xx_it.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="Src/stm32f1xx_hal_timebase_tim_template.c|Src/stm32f1xx_hal_timebase_rtc_wakeup_template.c|Src/stm32f1xx_hal_timebase_rtc_alarm_template.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
-						<entry excluding="stm32f1xx_it.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
-						<entry excluding="system_stm32f1xx.c|stm32f1xx_it.c|syscalls.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 					</sourceEntries>
 				</configuration>
@@ -174,13 +177,17 @@
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1949771878" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.279860773" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
 							</tool>
+							<tool id="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release.988662627" name="MCU GCC Assembler" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.exe.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.211038264" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="fr.ac6.managedbuild.tool.gnu.cross.assembler.input.945919904" superClass="fr.ac6.managedbuild.tool.gnu.cross.assembler.input"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 					<fileInfo id="fr.ac6.managedbuild.config.gnu.cross.exe.release.582265311.1832579217" name="stm32f1xx_it.h" rcbsApplicability="disable" resourcePath="inc/stm32f1xx_it.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="Src/stm32f1xx_hal_timebase_tim_template.c|Src/stm32f1xx_hal_timebase_rtc_wakeup_template.c|Src/stm32f1xx_hal_timebase_rtc_alarm_template.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="HAL_Driver"/>
-						<entry excluding="stm32f1xx_it.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
-						<entry excluding="system_stm32f1xx.c|stm32f1xx_it.c|syscalls.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="startup"/>
 					</sourceEntries>
 				</configuration>

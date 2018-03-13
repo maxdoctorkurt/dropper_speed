@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include startup/subdir.mk
 -include src/subdir.mk
+-include inc/subdir.mk
 -include HAL_Driver/Src/subdir.mk
 -include subdir.mk
 -include objects.mk
